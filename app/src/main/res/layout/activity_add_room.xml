@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EAEAEA">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новое помещение"
+        android:textSize="30sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#333333" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1000dp"
+        android:layout_height="2dp"
+        android:background="@color/lg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp"
+        />
+
+    <!-- Поле для ввода названия -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название"
+        android:textSize="24dp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:hint="Введите название"
+        android:layout_marginBottom="16dp"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <!-- Поле выбора типа помещения -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Тип помещения"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#333333"
+        android:spinnerMode="dropdown" />
+
+    <!-- Кнопка добавления -->
+    <Button
+        android:id="@+id/btnAddRoom"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="365dp"
+        android:backgroundTint="#66B3FF"
+        android:padding="12dp"
+        android:text="Добавить"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

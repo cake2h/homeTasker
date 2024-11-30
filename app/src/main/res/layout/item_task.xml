@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_edittext"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Название задачи -->
+    <TextView
+        android:id="@+id/tvTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название задачи"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <!-- Название комнаты -->
+    <TextView
+        android:id="@+id/tvTaskRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название комнаты"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="4dp" />
+
+    <!-- Время выполнения (справа) -->
+    <TextView
+        android:id="@+id/tvTaskTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 минут"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
